@@ -4,6 +4,7 @@ from datetime import time
 import cv2
 import numpy as np
 
+_Batang = np.full((480, 640, 3), 200, dtype = np.uint8)
 
 def load_file():
     img_file = "../res/pose01.jpg"
@@ -43,15 +44,44 @@ def drawTest():
     cv2.imshow('img', img)
     cv2.waitKey()
 
-def drawText():
+def drawText(image):
     str_date = datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
-    img = np.full((480, 640, 3), 255, dtype=np.uint8)
-    cv2.putText(img, str_date, (50,30),cv2.FONT_HERSHEY_SIMPLEX, 1, (10,60,10))
-    cv2.imshow('img', img)
-    cv2.waitKey()
+    #img = np.full((480, 640, 3), 255, dtype=np.uint8)
+    cv2.putText(image, str_date, (50,30),cv2.FONT_HERSHEY_SIMPLEX, 1, (10,60,10))
+    cv2.imshow('img', image)
+    #key_process()
+
+def onMouse(event, x,y,flags, param):
+    print(event, x,y,)
+    if event == cv2.EVENT_LBUTTONDOWN:
+        cv2.circle(_Batang, (x,y), 20, (100,200,150), -1)
+        cv2.imshow('img', _Batang)
+
+def key_process():
+    while True:
+        key = cv2.waitKey(0) & 0xFF
+        if key == ord('q'):
+            cv2.destroyAllWindows()
+            break;
+        elif key ==ord('a') or key==27:
+            cv2.destroyAllWindows()
+            break;
+        elif key == ord('a'):
+            pass
+            #print('a pressed')
+        else: continue
+
+
+
 
 if __name__ == "__main__":
     #frame_generation()
-    drawText()
+
+    cv2.namedWindow('img')
+    cv2.imshow('img', _Batang)
+    drawText(_Batang)
+    cv2.setMouseCallback('img', onMouse)
+
+    key_process()
 
 
