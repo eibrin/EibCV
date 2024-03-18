@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0505fd69-67a5-4b4b-b79f-8e709add9089" name="Changes" comment="first commit py cv">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/image_process.py" afterDir="false" />
-    </list>
+    <list default="true" id="0505fd69-67a5-4b4b-b79f-8e709add9089" name="Changes" comment="first commit py cv" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -70,7 +67,7 @@
       <updated>1708990897310</updated>
       <workItem from="1708990936500" duration="11527000" />
       <workItem from="1709076494256" duration="13085000" />
-      <workItem from="1709334824923" duration="11914000" />
+      <workItem from="1709334824923" duration="11941000" />
     </task>
     <task id="LOCAL-00001" summary="first commit py cv">
       <option name="closed" value="true" />
@@ -88,7 +85,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709121137368</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="first commit py cv">
+      <option name="closed" value="true" />
+      <created>1709358422683</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1709358422683</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
